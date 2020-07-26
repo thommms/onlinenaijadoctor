@@ -422,7 +422,7 @@ header span i {
   height: 60px;
   bottom: 40px;
   right: 40px;
-  background-color: #1da1f2;
+  background-color: #2550c4;
   color: #fff;
   border-radius: 50px;
   text-align: center;
@@ -568,7 +568,7 @@ header span i {
   height: 227px;
   margin: auto;
   border-radius: 60%;
-  border: #1da1f2 5px solid;
+  border:#2550c4 5px solid;
 }
 /* .principal {
       grid-area: bioimage;
