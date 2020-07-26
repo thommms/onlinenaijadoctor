@@ -97,7 +97,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #2550c4;
+  color: blue;
   outline: none;
 }
 
@@ -155,7 +155,7 @@ a:focus {
 }
 
 .btn-blue {
-  background: #4267b2;
+  background: #1da1f2;
 }
 
 .news-thumb {
@@ -416,6 +416,25 @@ header span i {
   padding-bottom: -10px;
 }
 
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #1da1f2;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+
 #home h3 {
   color: #ffffff;
   font-size: 14px;
@@ -549,7 +568,7 @@ header span i {
   height: 227px;
   margin: auto;
   border-radius: 60%;
-  border: rgb(99, 99, 224) 5px solid;
+  border: #1da1f2 5px solid;
 }
 /* .principal {
       grid-area: bioimage;
