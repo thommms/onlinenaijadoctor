@@ -520,7 +520,7 @@ header span i {
   background-size: cover;
   padding-top: 120px;
   padding-bottom: 100px;
-  padding-left: 5em;
+  /* padding-left: 5em; */
 }
 #advisory {
   background: url("../images/advisory.jpg") no-repeat top center;
