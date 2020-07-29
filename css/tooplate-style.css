@@ -415,6 +415,71 @@ header span i {
 .slider {
   padding-bottom: -10px;
 }
+.bounce {
+  /* position:fixed; */
+  -webkit-animation:bounce 3s ;
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:20px; }
+  100%     {bottom:0;}
+}
+.bounce2 {
+  /* position:fixed; */
+  -webkit-animation:bounce 2.5s ;
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:20px; }
+  100%     {bottom:0;}
+}
+
+.textSlide1 {
+  animation-duration: 2s;
+  animation-name: slide1;
+}
+@keyframes slide1 {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.textSlide2 {
+  animation-duration: 1.5s;
+  animation-name: slide2;
+}
+@keyframes slide2 {
+  from {
+    margin-right: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-right: 0%;
+    width: 100%;
+  }
+}
+
+/* .leftSlide{
+  position: absolute;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+    background: blue;
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+} */
 
 .whatsapp {
   position: fixed;
