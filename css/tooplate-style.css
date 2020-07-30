@@ -415,96 +415,106 @@ header span i {
 .aim {
   padding-top: 100px;
 }
-.aim-text{
-  text-align: left align;
+.aim-text {
+  text-align: left;
 }
 
 .read-more {
-padding:40px;
-text-align:center;}
+  padding: 40px;
+  text-align: center;
+}
 
 .read {
-  line-height:1em;
-  letter-spacing:0.06em;
-  font-family: 'Lato', sans-serif;
-  font-weight:normal;
-  font-size:16px;
-  text-decoration:none;
-  color:#fff;
-  background:#231f20;
-  display:inline-block;
-  padding:15px 12px 15px 15px;
+  line-height: 1em;
+  letter-spacing: 0.06em;
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  background: #231f20;
+  display: inline-block;
+  padding: 15px 12px 15px 15px;
   transition: 200ms;
-  border-radius:4px;
+  border-radius: 4px;
 }
 .read:hover {
-  background:#cea052;
+  background: #cea052;
 }
-read:after {
-  font-family: 'FontAwesome', sans-serif;
-  font-weight:300;
+.read:after {
+  font-family: "FontAwesome", sans-serif;
+  font-weight: 300;
   content: "\f105";
-  margin-left:20px;
-  color:#2550c4;
-  font-size:18px;
-  vertical-align:middle;
-  transition:color 200ms;
+  margin-left: 20px;
+  color: #2550c4;
+  font-size: 18px;
+  vertical-align: middle;
+  transition: color 200ms;
 }
 
 read:hover:after {
-  color:#231f20;
+  color: #231f20;
 }
+
 .slider {
   padding-bottom: -10px;
 }
 .bounce {
   /* position:fixed; */
-  -webkit-animation:bounce 3s ;
+  -webkit-animation: bounce 3s;
 }
 .bounce2 {
   /* position:fixed; */
-  -webkit-animation:bounce 2.5s ;
+  -webkit-animation: bounce 2.5s;
 }
 
 @-webkit-keyframes bounce {
-  0%       { bottom:5px; }
-  25%, 75% { bottom:15px; }
-  50%      { bottom:20px; }
-  100%     {bottom:0;}
+  0% {
+    bottom: 5px;
+  }
+  25%,
+  75% {
+    bottom: 15px;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 0;
+  }
 }
 
 .glossy-button {
   display: inline-block;
   position: relative;
-  background-color: #AAA;
-  background-image: linear-gradient( /* chrome */
-    hsla(0, 0%, 100%, 0.6), hsla(0, 0%, 100%, 0) 50%,
-    hsla(0, 0%, 0%, 0.3) 50%, hsla(0, 0%, 100%, 0.2)
+  background-color: #aaa;
+  background-image: linear-gradient(
+    /* chrome */ hsla(0, 0%, 100%, 0.6),
+    hsla(0, 0%, 100%, 0) 50%,
+    hsla(0, 0%, 0%, 0.3) 50%,
+    hsla(0, 0%, 100%, 0.2)
   );
   font-size: 20px;
   font-family: sans-serif;
   font-weight: bold;
   color: white;
   padding: 20px 40px;
-  text-shadow:
-    0 0 15px hsla(0, 0%, 100%, 1), /* bloom */
-    0 2px 4px hsla(0, 0%, 0%, 0.7); /* drop shadow */
+  text-shadow: 0 0 15px hsla(0, 0%, 100%, 1),
+    /* bloom */ 0 2px 4px hsla(0, 0%, 0%, 0.7); /* drop shadow */
   border: none;
   border-radius: 50px;
   margin: 10px;
-  box-shadow:
-    inset 0 -5px 20px hsla(0, 0%, 0%, 0.4), /* top light */
-    inset 0 5px 20px hsla(0, 0%, 100%, 0.4), /* bottom shadow */
-    /* multiple light sources yall */
-    -8px 8px 5px hsla(0, 0%, 0%, 0.15), /* drop shadow 1 */
-    5px 18px 10px hsla(0, 0%, 0%, 0.2); /* drop shadow 2 */
+  box-shadow: inset 0 -5px 20px hsla(0, 0%, 0%, 0.4),
+    /* top light */ inset 0 5px 20px hsla(0, 0%, 100%, 0.4),
+    /* bottom shadow */ /* multiple light sources yall */ -8px 8px 5px hsla(0, 0%, 0%, 0.15),
+    /* drop shadow 1 */ 5px 18px 10px hsla(0, 0%, 0%, 0.2); /* drop shadow 2 */
   cursor: pointer;
   transition: transform 0.1s, box-shadow 0.1s;
 }
 
 /* highlight */
 .glossy-button:before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   left: 20px;
@@ -512,11 +522,12 @@ read:hover:after {
   top: 5px;
   height: 30px;
   border-radius: 20px;
-  background: linear-gradient(
-    hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0) );
+  background: linear-gradient(hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0));
 }
 
-.glossy-button--blue { background-color: #2550c4; }
+.glossy-button--blue {
+  background-color: #2550c4;
+}
 
 .textSlide1 {
   animation-duration: 2s;
@@ -525,7 +536,7 @@ read:hover:after {
 @keyframes slide1 {
   from {
     margin-left: 100%;
-    width: 300%; 
+    width: 300%;
   }
 
   to {
@@ -540,7 +551,7 @@ read:hover:after {
 @keyframes slide2 {
   from {
     margin-right: 100%;
-    width: 300%; 
+    width: 300%;
   }
 
   to {
@@ -594,6 +605,7 @@ read:hover:after {
   width: 100%;
   height: 200%;
   object-fit: cover;
+  background: rgba(255, 255, 255, 0.7);
 }
 
 .slider .container {
@@ -659,9 +671,12 @@ read:hover:after {
 /*---------------------------------------
       ABOUT              
   -----------------------------------------*/
+.carry-about {
+  /* background: rgba(255,255,255); */
+}
 
 #about {
-  background: url("../images/about-bg.jpg") no-repeat top center;
+  background: url("../images/about-phone.jpeg") no-repeat top center;
   background-size: cover;
   padding-top: 120px;
   padding-bottom: 100px;
@@ -694,6 +709,9 @@ read:hover:after {
   color: #858585;
   margin: 0;
 }
+/*---------------------------------------
+      ABOUT              
+  -----------------------------------------*/
 
 /*---------------------------------------
       TEAM MEMBERS              
@@ -713,7 +731,7 @@ read:hover:after {
   height: 227px;
   margin: auto;
   border-radius: 60%;
-  border:#2550c4 5px solid;
+  border: #2550c4 5px solid;
 }
 /* .principal {
       grid-area: bioimage;
