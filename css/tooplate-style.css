@@ -412,6 +412,48 @@ header span i {
   padding-bottom: 10px;
   margin-top: 0;
 }
+.aim {
+  padding-top: 100px;
+}
+.aim-text{
+  text-align: left align;
+}
+
+.read-more {
+padding:40px;
+text-align:center;}
+
+.read {
+  line-height:1em;
+  letter-spacing:0.06em;
+  font-family: 'Lato', sans-serif;
+  font-weight:normal;
+  font-size:16px;
+  text-decoration:none;
+  color:#fff;
+  background:#231f20;
+  display:inline-block;
+  padding:15px 12px 15px 15px;
+  transition: 200ms;
+  border-radius:4px;
+}
+.read:hover {
+  background:#cea052;
+}
+read:after {
+  font-family: 'FontAwesome', sans-serif;
+  font-weight:300;
+  content: "\f105";
+  margin-left:20px;
+  color:#2550c4;
+  font-size:18px;
+  vertical-align:middle;
+  transition:color 200ms;
+}
+
+read:hover:after {
+  color:#231f20;
+}
 .slider {
   padding-bottom: -10px;
 }
