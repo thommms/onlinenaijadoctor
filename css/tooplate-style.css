@@ -600,12 +600,15 @@ read:hover:after {
   text-transform: uppercase;
   margin: 0;
 }
+.wrap{
+  background: rgba(255, 255, 255,0.7);
+
+}
 
 .container {
   width: 100%;
   height: 200%;
   object-fit: cover;
-  background: rgba(255, 255, 255, 0.7);
 }
 
 .slider .container {
@@ -680,7 +683,6 @@ read:hover:after {
   background-size: cover;
   padding-top: 120px;
   padding-bottom: 100px;
-  /* padding-left: 5em; */
 }
 #advisory {
   background: url("../images/advisory.jpg") no-repeat top center;
