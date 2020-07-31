@@ -101,7 +101,8 @@
   z-index: 1; }
 
 .owl-carousel .fadeOut {
-  animation-name: fadeOut; }
+  animation-name: fadeOut;
+}
 
 @keyframes fadeOut {
   0% {
