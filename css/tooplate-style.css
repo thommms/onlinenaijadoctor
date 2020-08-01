@@ -724,10 +724,36 @@ read:hover:after {
 /*---------------------------------------
       ABOUT              
   -----------------------------------------*/
-.carry-about {
-  /* background: rgba(255,255,255); */
+.slideleft {
+  animation-duration: 3s;
+  animation-name: slideleft;
 }
+@keyframes slideleft {
+  from {
+    margin-left: 200%;
+    /* width: 300%;  */
+  }
 
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.slidebottom {
+  animation-duration: 3s;
+  animation-name: slidebottom;
+}
+@keyframes slidebottom {
+  from {
+    margin-top: 200%;
+    /* width: 300%;  */
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 #about {
   background: url("../images/about-phone.jpeg") no-repeat top center;
   background-size: cover;
@@ -899,6 +925,10 @@ read:hover:after {
 #news,
 #news-detail {
   background: #f9f9f9;
+}
+
+.news-align {
+  padding-bottom: 50px;
 }
 
 #news-detail blockquote {
