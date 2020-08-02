@@ -425,16 +425,16 @@ header span i {
   text-align: center;
 }
 
-.typewriter {
+/* .typewriter {
   font-family: Courier, monospace;
 display: inline-block;
-}
+} */
 
 .typewriter-text {
   display: inline-block;
   overflow: hidden;
   letter-spacing: 2px;
- animation: typing 5s steps(30, end), blink .5s step-end;
+ animation: typing 5s steps(20, end), blink 10s step-end;
   white-space: nowrap;
   font-size: 30px;
   font-weight: 700;
