@@ -1,3 +1,8 @@
+function myFunction() {
+    document.getElementById("pay")= href="tel:+2348182026281";
+  }
+
+
 function makePayment() {
     FlutterwaveCheckout({
       public_key: "FLWPUBK_TEST-SANDBOXDEMOKEY-X",
