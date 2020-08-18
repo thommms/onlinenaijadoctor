@@ -5,21 +5,21 @@ function myFunction() {
 
 function makePayment() {
     FlutterwaveCheckout({
-      public_key: "FLWPUBK_TEST-SANDBOXDEMOKEY-X",
-      tx_ref: "hooli-tx-1920bbtyt",
+      public_key: "FLWPUBK_TEST-ee65b50cfe783bb082973437b6ed7444-X",
+      tx_ref: "hooli-tx-1920bgsdgfgdgt",
       amount: 1000,
       currency: "NGN",
       payment_options: "card, mobilemoneyghana, ussd",
       redirect_url: // specified redirect URL
-        "https://callbacks.piedpiper.com/flutterwave.aspx?ismobile=34",
+        "tel:+234 818 202 6281",
       meta: {
         consumer_id: 23,
         consumer_mac: "92a3-912ba-1192a",
       },
       customer: {
-        email: "onlinenaijadoctor@gmail.com",
+        email: "onlinenaijadoctor@patient.com",
         phone_number: "08102909304",
-        name: "Femi Akinmuda",
+        name: "Online naija doctor client",
       },
       callback: function (data) {
         console.log(data);
