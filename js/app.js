@@ -11,7 +11,7 @@ function makePayment() {
       currency: "NGN",
       payment_options: "card, mobilemoneyghana, ussd",
       redirect_url: // specified redirect URL
-        "tel:+234 818 202 6281",
+        "tel:0818 202 6281",
       meta: {
         consumer_id: 23,
         consumer_mac: "92a3-912ba-1192a",
