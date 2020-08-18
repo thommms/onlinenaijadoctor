@@ -17,7 +17,7 @@ function makePayment() {
         consumer_mac: "92a3-912ba-1192a",
       },
       customer: {
-        email: "onlinenaijadoctor@patient.com",
+        email: "onlinenaijadoctor@call.com",
         phone_number: "08102909304",
         name: "Online naija doctor client",
       },
@@ -30,6 +30,37 @@ function makePayment() {
       customizations: {
         title: "Online Naija Doctor",
         description: "Talk to a doctor now",
+        logo: "images/logo.png",
+      },
+    });
+  }
+function result() {
+    FlutterwaveCheckout({
+      public_key: "FLWPUBK_TEST-ee65b50cfe783bb082973437b6ed7444-X",
+      tx_ref: "hooli-tx-1920bgsdgfgdgt",
+      amount: 2000,
+      currency: "NGN",
+      payment_options: "card, mobilemoneyghana, ussd",
+      redirect_url: // specified redirect URL
+        "result.html",
+      meta: {
+        consumer_id: 23,
+        consumer_mac: "92a3-912ba-1192a",
+      },
+      customer: {
+        email: "onlinenaijadoctor@result.com",
+        phone_number: "08102909304",
+        name: "Online naija doctor client",
+      },
+      callback: function (data) {
+        console.log(data);
+      },
+      onclose: function() {
+        // close modal
+      },
+      customizations: {
+        title: "Online Naija Doctor",
+        description: "Result Interpretation and Follow Up",
         logo: "images/logo.png",
       },
     });
