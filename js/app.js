@@ -37,14 +37,14 @@ function makePayment() {
 function result() {
     FlutterwaveCheckout({
       public_key: "FLWPUBK_TEST-ee65b50cfe783bb082973437b6ed7444-X",
-      tx_ref: "hooli-tx-1920bgsdgfgdgt",
+      tx_ref: "hooli-tx-1920bgsdgfghhhh",
       amount: 2000,
       currency: "NGN",
       payment_options: "card, mobilemoneyghana, ussd",
       redirect_url: // specified redirect URL
       "https://thommms.github.io/onlinenaijadoctor/result.html",
       meta: {
-        consumer_id: 23,
+        consumer_id: 24,
         consumer_mac: "92a3-912ba-1192a",
       },
       customer: {
