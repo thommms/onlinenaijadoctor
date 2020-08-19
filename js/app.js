@@ -41,7 +41,7 @@ function result() {
     currency: "NGN",
     payment_options: "card, mobilemoneyghana, ussd",
     // specified redirect URL
-    redirect_url: "https://thommms.github.io/onlinenaijadoctor/result.html",
+    redirect_url: "mailto:onlinenaijadoctor@gmail.com",
     meta: {
       consumer_id: 24,
       consumer_mac: "92a3-912ba-1192a",
@@ -56,7 +56,6 @@ function result() {
     },
     onclose: function () {
       // close modal
-      redirect_url: "https://thommms.github.io/onlinenaijadoctor/index.html"
     },
     customizations: {
       title: "Online Naija Doctor",
