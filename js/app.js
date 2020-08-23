@@ -4,7 +4,7 @@ function myFunction() {
 
 function makePayment() {
   FlutterwaveCheckout({
-    public_key: "FLWPUBK_TEST-ee65b50cfe783bb082973437b6ed7444-X",
+    public_key: "FLWPUBK-afb77f04ec00cfba853119f0f96c67d2-X",
     tx_ref: "hooli-tx-1920bgsdgfgdgt",
     amount: 1000,
     currency: "NGN",
@@ -35,13 +35,13 @@ function makePayment() {
 }
 function result() {
   FlutterwaveCheckout({
-    public_key: "FLWPUBK_TEST-ee65b50cfe783bb082973437b6ed7444-X",
+    public_key: "FLWPUBK-afb77f04ec00cfba853119f0f96c67d2-X",
     tx_ref: "hooli-tx-1920bgsdgfghhhh",
     amount: 2000,
     currency: "NGN",
     payment_options: "card, mobilemoneyghana, ussd",
     // specified redirect URL
-    redirect_url: "mailto:onlinenaijadoctor@gmail.com",
+    redirect_url: "http://127.0.0.1:5501/dist/result.html",
     meta: {
       consumer_id: 24,
       consumer_mac: "92a3-912ba-1192a",
