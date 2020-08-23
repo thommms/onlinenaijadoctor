@@ -8,7 +8,7 @@ function makePayment() {
     tx_ref: "hooli-tx-1920bgsdgfgdgt",
     amount: 1000,
     currency: "NGN",
-    payment_options: "card, mobilemoneyghana, ussd",
+    payment_options: "card, mobilemoneyghana, ussd, banktransfer, account, credit, paga",
     // specified redirect URL
     redirect_url: "tel:(+234)08182026281",
     meta: {
@@ -39,7 +39,7 @@ function result() {
     tx_ref: "hooli-tx-1920bgsdgfghhhh",
     amount: 2000,
     currency: "NGN",
-    payment_options: "card, mobilemoneyghana, ussd",
+    payment_options: "card, mobilemoneyghana, ussd, banktransfer, account, credit, paga",
     // specified redirect URL
     redirect_url: "https://thommms.github.io/onlinenaijadoctor/result.html",
     meta: {
