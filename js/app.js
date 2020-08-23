@@ -17,7 +17,7 @@ function makePayment() {
     },
     customer: {
       email: "onlinenaijadoctor@call.com",
-      phone_number: "08102909304",
+      phone_number: "08182026281",
       name: "Online naija doctor client",
     },
     callback: function (data) {
@@ -41,7 +41,7 @@ function result() {
     currency: "NGN",
     payment_options: "card, mobilemoneyghana, ussd",
     // specified redirect URL
-    redirect_url: "http://127.0.0.1:5501/dist/result.html",
+    redirect_url: "https://thommms.github.io/onlinenaijadoctor/result.html",
     meta: {
       consumer_id: 24,
       consumer_mac: "92a3-912ba-1192a",
