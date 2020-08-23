@@ -48,7 +48,7 @@ function result() {
     },
     customer: {
       email: "onlinenaijadoctor@result.com",
-      phone_number: "08102909304",
+      phone_number: "08182026281",
       name: "Online naija doctor client",
     },
     callback: function (data) {
