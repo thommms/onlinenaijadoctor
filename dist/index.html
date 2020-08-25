@@ -24,6 +24,7 @@ http://www.tooplate.com/view/2098-health
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/owl.carousel.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
@@ -55,22 +56,29 @@ http://www.tooplate.com/view/2098-health
               <a href="mailto: onlinenaijadoctor@gmail.com">onlinenaijadoctor@gmail.com</a></span
             >
             <span class="phone-icon"
-              ><i class="fa fa-phone"></i> <a href="#">010-060-0160</a></span
+              ><i class="fa fa-phone"></i> <a href="tel:0809 660 0882">+234 809 660 0882</a></span
             >
           </div>
 
           <div class="col-md-6 col-sm-6 text-align-center icons">
+            <!-- <a href="https://www.instagram.com/onlinenaijadoctor/?hl=en" target="_blank">
+              <i class="fa fa-instagram" style="color: palevioletred;"></i>
+            </a> -->
             <a href="https://www.instagram.com/onlinenaijadoctor/?hl=en" target="_blank">
-              <i class="fa fa-instagram"></i>
-            </a>
+              <img src="images/instagram.png" >
+              <i class="fa"> </i>
+             </a>
             <a href="https://twitter.com/onlinenaijadoc" target="_blank">
-              <i class="fa fa-twitter"></i>
+              <i class="fa fa-twitter" style="color: rgb(16, 144, 248);"></i>
             </a>
             <a href="mailto: onlinenaijadoctor@gmail.com">
-              <i class="fa fa-envelope-o"></i>
+              <i class="fa fa-envelope-o" style="color: red;"></i>
             </a>
             <a href="https://www.facebook.com/onlinenaijadoctor/" target="_blank">
-              <i class="fa fa-facebook"></i>
+              <i class="fa fa-facebook" style="color: blue;"></i>
+            </a>
+            <a href="http://www.onlinenaijadoctorinfo.wordpress.com" target="_blank">
+              <i class="glyphicon glyphicon-bold"></i>
             </a>
           </div>
         </div>
@@ -127,17 +135,16 @@ http://www.tooplate.com/view/2098-health
               <div class="caption">
                 <div class="col-md-offset-1 col-md-10">
                   <h3 class="textSlide1">One touch health solution</h3>
-                  <h1 class="textSlide2">Healthy Living</h1>
+                  <h1 class="textSlide2 ">Healthy Living</h1>
                   <a
-                    href="https://wa.me/2348182026281?text=Hi Doctor Femi, I would like to have an appointment with you"
-                    class="section-btn btn btn-default glossy-button glossy-button--blue bounce"
+                    onClick="makePayment()"
+                    class="section-btn btn btn-default glossy-button glossy-button--blue bounce" 
                     >Talk to a Doctor Now</a
                   >
-
                   <a
-                    href="result.html"
+                    onclick="result()"
                     class="section-btn btn btn-default glossy-button glossy-button--blue bounce2"
-                    >Result interpretations</a
+                    >Result Interpretations</a
                   >
                   
                 </div>
@@ -155,14 +162,14 @@ http://www.tooplate.com/view/2098-health
                   <h3 class="textSlide1">One touch health solution</h3>
                   <h1 class="textSlide2">Healthy Living</h1>
                   <a
-                    href="https://wa.me/2348182026281?text=Hi Doctor Femi, I would like to have an appointment with you"
+                     onClick="makePayment()"
                     class="section-btn btn btn-default glossy-button glossy-button--blue bounce"
                     >Talk to a Doctor Now</a
                   >
                   <a
-                    href="result.html"
+                    onclick="result()"
                     class="section-btn btn btn-default smoothScroll glossy-button glossy-button--blue bounce2"
-                    >Result interpretations</a
+                    >Result Interpretations</a
                   >
                 </div>
                 <div class="move">
@@ -180,14 +187,14 @@ http://www.tooplate.com/view/2098-health
                   <h3 class="textSlide1">One touch health solution</h3>
                   <h1 class="textSlide2">Healthy Living</h1>
                   <a
-                    href="https://wa.me/2348182026281?text=Hi Doctor Femi, I would like to have an appointment with you"
+                    onClick="makePayment()"
                     class="section-btn btn btn-default glossy-button glossy-button--blue bounce"
                     >Talk to a Doctor Now</a
                   >
                   <a
-                    href="result.html"
+                  onclick="result()"
                     class="section-btn btn btn-default smoothScroll glossy-button glossy-button--blue bounce2"
-                    >Result interpretations</a
+                    >Result Interpretations</a
                   >
                 </div>
                 <div class="move">
@@ -235,7 +242,7 @@ http://www.tooplate.com/view/2098-health
               </div>
               <div class="col-md-6 col-sm-6">
                 <!-- CONTACT FORM HERE -->
-                <form id="appointment-form" role="form" method="post" action="#">
+                <form id="appointment-form" role="form" method="post" action="mailto:onlinenaijadoctor@gmail.com">
                   <!-- SECTION TITLE -->
                   <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
                     <h2>Make an appointment</h2>
@@ -302,6 +309,7 @@ http://www.tooplate.com/view/2098-health
                         placeholder="Message"
                       ></textarea>
                       <button
+                        action="mailto:onlinenaijadoctor@gmail.com"
                         type="submit"
                         class="form-control"
                         id="cf-submit"
@@ -323,7 +331,7 @@ http://www.tooplate.com/view/2098-health
 
       <div>
         <a
-          href="https://wa.me/2348182026281?text=Hi Doctor Femi, I would like to have an appointment with you"
+          href="https://wa.me/2348096600881?text=Good day Online Naija Doctor"
           class="whatsapp"
           target="_blank"
         >
@@ -369,5 +377,11 @@ http://www.tooplate.com/view/2098-health
     <script src="js/smoothscroll.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="https://checkout.flutterwave.com/v3.js"></script>
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script> -->
+    <script src="js/app.js"></script>
   </body>
 </html>

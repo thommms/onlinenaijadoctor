@@ -412,6 +412,7 @@ header span i {
   padding-bottom: 10px;
   margin-top: 0;
 }
+
 .aim {
   padding-top: 100px;
 }
@@ -422,6 +423,41 @@ header span i {
 .read-more {
   padding: 40px;
   text-align: center;
+}
+
+/* .typewriter {
+  font-family: Courier, monospace;
+display: inline-block;
+} */
+
+.typewriter-text {
+  display: inline-block;
+  overflow: hidden;
+  letter-spacing: 2px;
+ animation: typing 5s steps(20, end), blink 10s step-end;
+  white-space: nowrap;
+  font-size: 30px;
+  font-weight: 700;
+  border-right: 4px solid orange;
+  box-sizing: border-box;
+}
+
+@keyframes typing {
+  from { 
+      width: 0% 
+  }
+  to { 
+      width: 100% 
+  }
+}
+
+@keyframes blink {
+  from, to { 
+      border-color: transparent 
+  }
+  50% { 
+      border-color: orange; 
+  }
 }
 
 .read {
@@ -578,7 +614,7 @@ read:hover:after {
   height: 60px;
   bottom: 40px;
   right: 40px;
-  background-color: #2550c4;
+  background-color: teal;
   color: #fff;
   border-radius: 50px;
   text-align: center;
