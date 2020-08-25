@@ -1,7 +1,3 @@
-function myFunction() {
-  document.getElementById("pay") = href = "tel:+2348182026281";
-}
-
 function makePayment() {
   FlutterwaveCheckout({
     public_key: "FLWPUBK-afb77f04ec00cfba853119f0f96c67d2-X",
@@ -10,7 +6,7 @@ function makePayment() {
     currency: "NGN",
     payment_options: "card, mobilemoneyghana, ussd, banktransfer, account, credit, paga",
     // specified redirect URL
-    redirect_url: "tel:(+234)08182026281",
+    redirect_url: "tel:(+234)08096600884",
     meta: {
       consumer_id: 23,
       consumer_mac: "92a3-912ba-1192a",
