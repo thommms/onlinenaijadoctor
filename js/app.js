@@ -61,6 +61,19 @@ function result() {
   });
 }
 
+function submitFormss(){
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyQOnkdH1Tj4bYirGtU8vu-HKIzs1olcVHZomPHRYNmcmZ3ZvTa/exec'
+  const form = document.forms['appointment-form']
+  form.addEventListener('submit', e => { e.preventDefault()
+  // window.open("index.html")
+  console.log("check before")
+  window.alert("submitted successfully")
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => console.log('Success!', response))
+  .catch(error => console.error('Error!', error.message)) })
+  
+}
+
 // function payWithPaystack() {
 
 //     var handler = PaystackPop.setup({

@@ -78,16 +78,16 @@ http://www.tooplate.com/view/2098-health
               <i class="fa"> </i>
             </a>
             <a href="https://twitter.com/onlinenaijadoc" target="_blank">
-              <i class="fa fa-twitter" style="color: rgb(16, 144, 248);"></i>
+              <i class="fa fa-twitter" style="color: rgb(16, 144, 248)"></i>
             </a>
             <a href="mailto: onlinenaijadoctor@gmail.com">
-              <i class="fa fa-envelope-o" style="color: red;"></i>
+              <i class="fa fa-envelope-o" style="color: red"></i>
             </a>
             <a
               href="https://www.facebook.com/onlinenaijadoctor/"
               target="_blank"
             >
-              <i class="fa fa-facebook" style="color: blue;"></i>
+              <i class="fa fa-facebook" style="color: blue"></i>
             </a>
           </div>
         </div>
@@ -268,12 +268,7 @@ http://www.tooplate.com/view/2098-health
               <div class="col-md-3 col-sm-3"></div>
               <div class="col-md-6 col-sm-6">
                 <!-- CONTACT FORM HERE -->
-                <form
-                  id="appointment-form"
-                  role="form"
-                  method="post"
-                  action="https://script.google.com/macros/s/AKfycbyQOnkdH1Tj4bYirGtU8vu-HKIzs1olcVHZomPHRYNmcmZ3ZvTa/exec"
-                >
+                <form id="appointment-form" role="form">
                   <!-- SECTION TITLE -->
                   <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
                     <h2>Make an appointment</h2>
@@ -314,7 +309,7 @@ http://www.tooplate.com/view/2098-health
 
                     <div class="col-md-6 col-sm-6">
                       <label for="select">Select Department</label>
-                      <select class="form-control">
+                      <select class="form-control" name="department">
                         <option>General Health</option>
                         <option>Cardiology</option>
                         <option>Dental</option>
@@ -344,7 +339,7 @@ http://www.tooplate.com/view/2098-health
                         type="submit"
                         class="form-control"
                         id="cf-submit"
-                        name="submit"
+                        name="submittin"
                       >
                         Submit
                       </button>
@@ -406,6 +401,20 @@ http://www.tooplate.com/view/2098-health
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="https://checkout.flutterwave.com/v3.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwd3egzEx_SsjblAyz-QgvqztiYVtPHgQUYot3Ty9pZgcN1xQ/exec";
+      const form = document.forms["appointment-form"];
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        window.confirm("Do you want to submit this form?");
+        window.alert("submitted successfully");
+        location.reload();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
     <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
 
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
