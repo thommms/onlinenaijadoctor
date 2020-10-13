@@ -4,8 +4,6 @@
     <title>Health - Online Naija Doctor</title>
     <!--
 
-Template 2098 Health
-
 http://www.tooplate.com/view/2098-health
 
 -->
@@ -162,14 +160,10 @@ http://www.tooplate.com/view/2098-health
                 go.
               </p>
               <br />
-              <form
-                action="upload.php"
-                method="POST"
-                enctype="multipart/form-data"
-              >
-              Select file to upload:
-              <input type="file" name="fileToUpload" id="fileToUpload">
-              <input type="submit" value="Upload Image" name="submit">
+              <form id="result-submit" role="form">
+                Select file to upload:
+                <input type="file" name="fileToUpload" id="fileToUpload" />
+                <input type="submit" value="Upload Image" name="submit" />
               </form>
             </div>
           </div>
@@ -214,9 +208,24 @@ http://www.tooplate.com/view/2098-health
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="https://checkout.flutterwave.com/v3.js"></script>
+    <script>
+      const form = document.forms["result-submit"];
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        window.alert(
+          "kindly submit your document as attached file to onlinenaijadoctor@gmail.com"
+        );
+        // window.alert("submitted successfully");
+        location.reload();
+      });
+    </script>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://js.paystack.co/v1/inline.js"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>

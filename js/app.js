@@ -4,7 +4,8 @@ function makePayment() {
     tx_ref: "hooli-tx-1920bgsdgfgdgt",
     amount: 1000,
     currency: "NGN",
-    payment_options: "card, mobilemoneyghana, ussd, banktransfer, account, credit, paga",
+    payment_options:
+      "card, mobilemoneyghana, ussd, banktransfer, account, credit, paga",
     // specified redirect URL
     redirect_url: "tel:(+234)08096600884",
     meta: {
@@ -35,9 +36,11 @@ function result() {
     tx_ref: "hooli-tx-1920bgsdgfghhhh",
     amount: 2000,
     currency: "NGN",
-    payment_options: "card, mobilemoneyghana, ussd, banktransfer, account, credit, paga",
+    payment_options:
+      "card, mobilemoneyghana, ussd, banktransfer, account, credit, paga",
     // specified redirect URL
-    redirect_url: "https://thommms.github.io/onlinenaijadoctor/result.html",
+    // redirect_url: "https://thommms.github.io/onlinenaijadoctor/result.html",
+    redirect_url: "https://www.onlinenaijadoctor.com/result.html",
     meta: {
       consumer_id: 24,
       consumer_mac: "92a3-912ba-1192a",
@@ -61,17 +64,19 @@ function result() {
   });
 }
 
-function submitFormss(){
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyQOnkdH1Tj4bYirGtU8vu-HKIzs1olcVHZomPHRYNmcmZ3ZvTa/exec'
-  const form = document.forms['appointment-form']
-  form.addEventListener('submit', e => { e.preventDefault()
-  // window.open("index.html")
-  console.log("check before")
-  window.alert("submitted successfully")
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-  .then(response => console.log('Success!', response))
-  .catch(error => console.error('Error!', error.message)) })
-  
+function submitFormss() {
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbyQOnkdH1Tj4bYirGtU8vu-HKIzs1olcVHZomPHRYNmcmZ3ZvTa/exec";
+  const form = document.forms["appointment-form"];
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    // window.open("index.html")
+    console.log("check before");
+    window.alert("submitted successfully");
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => console.log("Success!", response))
+      .catch((error) => console.error("Error!", error.message));
+  });
 }
 
 // function payWithPaystack() {
